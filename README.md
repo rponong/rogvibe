@@ -13,3 +13,9 @@ rogvibe
 uv tool install --python 3.13 rogvibe
 rogvibe
 ```
+
+777 slot mode
+
+```cli
+uvx rogvibe --slot
+```
