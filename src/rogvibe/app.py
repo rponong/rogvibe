@@ -648,7 +648,9 @@ class SlotMachineWidget(Widget):
 
     def __init__(self) -> None:
         super().__init__()
-        self._items = list(MAYBE_VIBER)
+        # Use detected providers, fallback to MAYBE_VIBER if none found
+        detected_providers = detect_default_participants()
+        self._items = detected_providers if detected_providers else list(MAYBE_VIBER)
         self._reels = [
             SlotMachineReel(0, self._items),
             SlotMachineReel(1, self._items),
