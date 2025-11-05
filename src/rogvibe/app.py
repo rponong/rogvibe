@@ -40,6 +40,8 @@ def detect_default_participants() -> list[str]:
     for provider in MAYBE_VIBER:
         if on_path(provider):
             providers.append(provider)
+    if len(providers) == 0:
+        return []
     random.shuffle(providers)
     if len(providers) < 4:
         while len(providers) < 4:
@@ -321,8 +323,14 @@ class LotteryApp(App):
 
     def compose(self) -> ComposeResult:
         with Vertical(id="layout"):
+            # 检查是否所有参与者都是 "handy"
+            if all(p == "handy" for p in self._participants):
+                instruction_text = "✍️ You're a hero who hand-writes the code. Press Space to spin; press q to quit."
+            else:
+                instruction_text = "Press Space to spin; press Enter to run the viber; press q to quit."
+
             yield Static(
-                "Press Space to spin; press Enter to run the viber; press q to quit.",
+                instruction_text,
                 id="instructions",
             )
             if self._wheel.truncated:
@@ -350,9 +358,15 @@ class LotteryApp(App):
         self._pending_command = message.winner
         # 如果是 "lucky" 或 "handy",不允许执行命令
         if message.winner in ("lucky", "handy"):
-            self._result.update(
-                f"🎉 viber: {message.winner}\n🍀 Lucky winner! Press Space to spin again, or q to quit."
-            )
+            # 检查是否所有参与者都是 "handy"
+            if all(p == "handy" for p in self._participants):
+                self._result.update(
+                    f"🎉 viber: {message.winner}\n✍️  You're a hero who hand-writes the code. Press Space to spin again, or q to quit."
+                )
+            else:
+                self._result.update(
+                    f"🎉 viber: {message.winner}\n🍀 Lucky winner! Press Space to spin again, or q to quit."
+                )
         else:
             self._result.update(
                 f"🎉 viber: {message.winner}\n↩️  Press Enter to run and exit, or q to quit."
