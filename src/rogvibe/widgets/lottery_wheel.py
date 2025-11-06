@@ -136,7 +136,7 @@ class LotteryWheel(Widget):
             return
 
         self._is_spinning = True
-        self.current_dice = DICE_EMOJI  # 开始旋转时显示骰子
+        self.current_dice = DICE_EMOJI
         self._initial_steps = random.randint(
             self._participant_count * 4, self._participant_count * 7
         )
@@ -152,15 +152,13 @@ class LotteryWheel(Widget):
     def _advance(self) -> None:
         self.current_index = (self.current_index + 1) % self._participant_count
         self._steps_remaining -= 1
-        # 随机切换骰子面,让它"旋转"起来
         dice_face = random.choice(self._dice_faces)
         self.current_dice = dice_face
-        # 发送消息通知骰子变化(也发送字符骰子面)
         self.post_message(SpinTick(self, dice_face))
 
         if self._steps_remaining <= 0:
             self._is_spinning = False
-            self.current_dice = TARGET_EMOJI  # 停止时回到靶心
+            self.current_dice = TARGET_EMOJI
             winner = self._participants[self.current_index]
             self.post_message(SpinFinished(self, winner))
             return

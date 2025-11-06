@@ -66,7 +66,7 @@ class LotteryApp(App):
 
     def compose(self) -> ComposeResult:
         with Vertical(id="layout"):
-            # 检查是否所有参与者都是 "handy"
+            # Check if all participants are "handy"
             if all(p == "handy" for p in self._participants):
                 instruction_text = "✍️ You're a hero who hand-writes the code. Press Space to spin; press q to quit."
             else:
@@ -154,7 +154,7 @@ class LotteryApp(App):
 
     def on_spin_finished(self, message: SpinFinished) -> None:
         self._pending_command = message.winner
-        # 如果是 "lucky" 或 "handy" 或 "claude",不允许执行命令，但显示动画
+        # If it's "lucky" or "handy" or "claude", don't allow command execution, but show animation
         if message.winner in SPECIAL_PARTICIPANTS:
             # Start celebration animation
             self._celebration_frame = 0
