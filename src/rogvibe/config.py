@@ -1,14 +1,7 @@
-"""Configuration for rogvibe."""
+"""Deprecated: Configuration has been moved to constants.py"""
 
-# List of potential viber command s to detect on the system
-# add more here PR welcome
-MAYBE_VIBER = [
-    "kimi",
-    "claude",
-    "gemini",
-    "codex",
-    "code",
-    "cursor",
-    "amp",
-    "opencode",
-]
+from __future__ import annotations
+
+from .constants import MAYBE_VIBER
+
+__all__ = ["MAYBE_VIBER"]

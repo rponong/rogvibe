@@ -1,3 +1,5 @@
+"""Command-line interface for rogvibe."""
+
 from __future__ import annotations
 
 import sys
