@@ -25,3 +25,9 @@ uvx rogvibe --slot
 ```
 
 https://github.com/user-attachments/assets/7ba0ad45-fa7b-4007-b59c-dbb547bfb2fd
+
+flip mode
+
+```cli
+uvx rogvibe --flip
+```

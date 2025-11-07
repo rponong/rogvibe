@@ -91,3 +91,37 @@ class SlotAllStopped(Message):
     def origin(self) -> Widget:
         """Widget that emitted the message."""
         return self._origin
+
+
+class AllCardsMatched(Message):
+    """Fired when all cards are matched in the flip card game."""
+
+    def __init__(self, sender: Widget, winner: str) -> None:
+        try:
+            super().__init__(sender)  # type: ignore[arg-type]
+        except TypeError:
+            super().__init__()
+        self._origin = sender
+        self.winner = winner
+
+    @property
+    def origin(self) -> Widget:
+        """Widget that emitted the message."""
+        return self._origin
+
+
+class PairMatched(Message):
+    """Fired when a pair of cards is matched in the flip card game."""
+
+    def __init__(self, sender: Widget, value: str) -> None:
+        try:
+            super().__init__(sender)  # type: ignore[arg-type]
+        except TypeError:
+            super().__init__()
+        self._origin = sender
+        self.value = value
+
+    @property
+    def origin(self) -> Widget:
+        """Widget that emitted the message."""
+        return self._origin

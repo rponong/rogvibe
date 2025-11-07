@@ -34,4 +34,4 @@ DICE_EMOJI: str = "🎲"
 TARGET_EMOJI: str = "🎯"
 
 # Special participants
-SPECIAL_PARTICIPANTS: set[str] = {"lucky", "handy", "claude"}
+SPECIAL_PARTICIPANTS: set[str] = {"lucky", "handy"}

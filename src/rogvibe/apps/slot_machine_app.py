@@ -247,4 +247,9 @@ class SlotMachineApp(App):
         """Execute the winner command."""
         if not self._pending_command:
             return
+        # Don't execute special participants like "lucky" and "handy"
+        from ..constants import SPECIAL_PARTICIPANTS
+
+        if self._pending_command in SPECIAL_PARTICIPANTS:
+            return
         execute_command(self._pending_command, self)
